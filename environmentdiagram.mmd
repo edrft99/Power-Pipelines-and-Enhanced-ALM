@@ -1,21 +1,18 @@
-flowchart TD
-subgraph Production
-    A[[Main group]] --> B[New - Production Environment]
-    A --> C[New - Personal Productivity Environment]
-end
-subgraph Development
-    D[[dev group]] --> E[New - Orchestrator Environment]
-    D[[dev group]] --> F(New - Dev Environment)
-end
-subgraph Testing
-    G[[test group]] -->H[New - Test Environment]
- end
- subgraph Orchestrator
-    
- end
-    subgraph Legend
-    X{{Security Role}}
-    Y[[Security Group]]
-    end
+flowchart LR
+  subgraph Tennant
+    direction TB
+    subgraph Dev
+     end
+    subgraph Test
+     end
+    subgraph Production
+     end
+    subgraph Orchestrator
+     end
+  end
 
-    
+style Tennant fill:#ffffff,stroke:#f66,stroke-width:2px,color:#000000,stroke-dasharray: 5 5
+style Dev fill:#ffffff,stroke:#275912,stroke-width:2px,color:#000000,stroke-dasharray: 5 5
+style Test fill:#ffffff,stroke:#275912,stroke-width:2px,color:#000000,stroke-dasharray: 5 5
+style Production fill:#ffffff,stroke:#275912,stroke-width:2px,color:#000000,stroke-dasharray: 5 5
+style Orchestrator fill:#ffffff,stroke:#275912,stroke-width:2px,color:#000000,stroke-dasharray: 5 5
