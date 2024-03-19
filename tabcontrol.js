@@ -3,7 +3,7 @@ function onFormLoad(executionContext) {
   // Get the record ID
   var recordId = formContext.data.entity.getId();
   // Set the vars
-  var tabinfo = formContext.ui.tabs.get("tab_info");
+  var tabinfo = formContext.ui.tabs.get("tab_tech");
 
   // Check if the record has been created
   if (recordId === null || recordId === "") {
