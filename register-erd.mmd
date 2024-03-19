@@ -1,0 +1,17 @@
+---
+title: Register ERD
+---
+erDiagram
+    Register }| -- || Entra :contains
+    Register }| -- || Contacts :contains
+    Entra{
+        int EntraID PK
+        }
+    Contacts{
+        int ID PK
+        }
+     Register {
+        string ProjectName PK
+        lookup MicrosoftEntraID-ProjectLead FK
+        lookup Contacts-Customer FK
+    }
