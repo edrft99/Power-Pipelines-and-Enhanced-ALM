@@ -1,0 +1,15 @@
+---
+title: Approvers ERD
+---
+erDiagram
+    Approvers}| -- || Entra :contains
+    
+    Entra{
+        int EntraID PK
+        }
+     Approvers {
+        string ApproverName PK
+        choice Role
+        coice RoleContext
+        lookup MicrosoftEntraID-POC FK
+    }
