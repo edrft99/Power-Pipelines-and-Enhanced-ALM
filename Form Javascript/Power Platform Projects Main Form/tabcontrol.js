@@ -4,7 +4,7 @@ function onFormLoad(executionContext) {
   var recordId = formContext.data.entity.getId();
   // Set the vars
   var tabinfo = formContext.ui.tabs.get("tab_tech");
-
+  var tabapproval = formContext.ui.tabs.get("tab_approvals");
   // Check if the record has been created
   if (recordId === null || recordId === "") {
     // If the record has not been created, hide the tabs
@@ -15,5 +15,6 @@ function onFormLoad(executionContext) {
   }
   function hideOrShowTabsAndSections(isVisible) {
     tabinfo.setVisible(isVisible);
+    tabapproval.setVisible(isVisible);
   }
 }
