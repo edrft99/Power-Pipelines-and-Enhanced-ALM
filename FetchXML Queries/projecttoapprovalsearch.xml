@@ -1,7 +1,7 @@
-<fetch top="50">
+<fetch top="1">
   <entity name="andy_powerplatformprojects">
     <filter>
-      <condition attribute="andy_powerplatformprojectsid" operator="eq" value="ad36fcbd-0612-ef11-9f89-000d3a4e580c" uiname="Stevie Test" uitype="andy_powerplatformprojects" />
+      <condition attribute="andy_powerplatformprojectsid" operator="eq" value="ad36fcbd-0612-ef11-9f89-000d3a4e580c"/>
     </filter>
     <link-entity name="msdyn_flow_approval" from="msdyn_flow_approvalid" to="andy_teamleadapproval">
       <link-entity name="msdyn_flow_approvalresponse" from="msdyn_flow_approvalresponse_approval" to="msdyn_flow_approvalid">
