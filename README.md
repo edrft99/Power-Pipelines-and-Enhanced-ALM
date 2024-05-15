@@ -1,4 +1,4 @@
-# Power-Pipelines-and-Enhanced-ALM
+# Power Platform Project Management
 
 The goal for this project is to configure Power Pipelines within the Microsoft Power Platfrom with enhanced ALM.
 
