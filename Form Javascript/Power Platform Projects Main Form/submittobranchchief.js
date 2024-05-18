@@ -1,4 +1,4 @@
-function onChange(context) {
+function onSubmit(context) {
   let attribute = context.getEventSource();
   let value = attribute.getValue();
   let formContext = context.getFormContext();
